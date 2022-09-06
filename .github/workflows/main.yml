@@ -11,10 +11,11 @@ jobs:
     steps:
       - name: test1
         run: |
-          pwd
-          ls -la
-          cd ..
-          pwd
-          ls -la
-          cd ..
-          ls -la
+          echo "Nice to meet you!" > hello
+  second: 
+    name: My Second Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: test2
+        run: |
+          cat hello
