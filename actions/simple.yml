@@ -11,5 +11,5 @@ jobs:
     steps:
       - name: test
         run: |
-          echo "hello" >> hello
-          cat "hello"
+          export HELLO="Nice to meet you!"
+          echo $HELLO
