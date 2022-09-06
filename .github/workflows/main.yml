@@ -11,8 +11,4 @@ jobs:
     steps:
       - name: test1
         run: |
-          echo "hello" >> hello
-
-      - name: test2
-        run: |
-          cat "hello"
+          pwd
