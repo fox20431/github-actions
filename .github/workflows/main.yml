@@ -2,7 +2,7 @@ name: Main
 on: 
   push:
     branches:
-      - "master"
+      - "main"
 
 jobs:
   first_job: # Setting a custom job id
