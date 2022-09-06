@@ -1,0 +1,15 @@
+name: Main
+on: 
+  push:
+    branches:
+      - "master"
+
+jobs:
+  first_job: # Setting a custom job id
+    name: My First Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: |
+          export HELLO="Nice to meet you!"
+          echo $HELLO
